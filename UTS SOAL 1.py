@@ -1,0 +1,12 @@
+print("Program Perhitungan Nilai Raport\n")
+n=int(input("Masukkan banyaknya siswa : "))
+for i in range (1,n+1):
+    print("Siswa ke - ", i)
+    hadir = int(input("Masukkan Jumlah Absensi Pertemuan (Maks. 14) : "))
+    T = int(input("Masukkan Nilai Tugas Harian via Zoom             : "))
+    PH = int(input("Masukkan Nilai harian via video                 : "))
+    PTS = int(input("Masukkan Nilai Tengah Semester                 : "))
+    PAS = int(input("Masukkan Nilai Akhir Semester                  : "))
+    raport = (0.1*hadir)+(0.25*(T + PH))+(0.3*PTS)+(0.35*PAS)
+    print("Nilai Raport Siswa ke-", i,":",raport)
+    print("\n")
